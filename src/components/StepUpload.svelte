@@ -1,5 +1,5 @@
 <script>
-    import { appStatus, setAppStatusLoading, setAppStatusError, setAppStatusChatMode } from '../pages/store.ts'
+    import { setAppStatusLoading, setAppStatusError, setAppStatusChatMode } from '../pages/store.ts'
     import Dropzone from "svelte-file-dropzone";
 
     let files = {
@@ -33,6 +33,7 @@
 
             const {id, url, pages} = await res.json()
             setAppStatusChatMode({id, url, pages})
+            console.log(url)
 
 
         }
