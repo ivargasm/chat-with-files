@@ -8,12 +8,12 @@ export const APP_STATUS = {
 }
 
 
-// export const appStatus = writable(APP_STATUS.INIT)
-// export const appStatusInfo = writable({id:'', url:'', pages:0})
+export const appStatus = writable(APP_STATUS.INIT)
+export const appStatusInfo = writable({id:'', url:'', pages:0})
 
 
-export const appStatus = writable(APP_STATUS.CHAT_MODE)
-export const appStatusInfo = writable({id:'9a7044cb16ab8b3a69a614130d727179', url:'https://res.cloudinary.com/ivargasm/image/upload/v1707258215/chat-with-pdf/ttazhy9ecgwneesnqgte.pdf', pages:0})
+// export const appStatus = writable(APP_STATUS.CHAT_MODE)
+// export const appStatusInfo = writable({id:'9a7044cb16ab8b3a69a614130d727179', url:'https://res.cloudinary.com/ivargasm/image/upload/v1707258215/chat-with-pdf/ttazhy9ecgwneesnqgte.pdf', pages:0})
 
 // metodo para actualizar a LOADING
 export const setAppStatusLoading = () => {
